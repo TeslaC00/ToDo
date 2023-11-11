@@ -1,0 +1,38 @@
+.main-view {
+    -fx-background-color: white;
+    -fx-font-family: "MV Boli";
+    -fx-font-size: 1.2em;
+    -fx-padding: 10;
+    -fx-text-fill: black;
+}
+
+.main-view .current-task-List {
+    -fx-background-color: yellow;
+    -fx-padding: 20;
+    -fx-text-fill: white;
+}
+
+.main-view .complete-task-list {
+    -fx-padding: 20;
+    -fx-background-color: lightgreen;
+    -fx-text-fill: forestgreen;
+}
+
+.main-view .task-btn {
+    -fx-padding: 5 10 5 10;
+    -fx-border-radius: 8;
+    -fx-background-color: aqua;
+}
+
+.main-view .task-btn:hover {
+    -fx-cursor: hand;
+}
+
+.main-view .text-field {
+    -fx-background-color: lightgray;
+}
+
+.main-view .text-field:focused {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
