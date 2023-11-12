@@ -6,17 +6,57 @@
     -fx-text-fill: black;
 }
 
+.main-view #vbox {
+    -fx-padding: 5;
+    -fx-spacing: 8;
+}
+
 .main-view .current-task-List {
     -fx-background-color: yellow;
-    -fx-padding: 20;
+    -fx-padding: 5;
     -fx-text-fill: white;
 }
 
+.main-view .current-task-List .list-cell {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 8;
+    -fx-alignment: center-left;
+    -fx-text-fill: black;
+    -fx-padding: 5;
+}
+
+.main-view .current-task-List .list-cell:hover {
+    -fx-background-color: #c0c0c0;
+    -fx-cursor: hand;
+}
+
+.main-view .current-task-List .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
 .main-view .complete-task-list {
-    -fx-padding: 20;
+    -fx-padding: 5;
     -fx-background-color: lightgreen;
     -fx-text-fill: forestgreen;
 }
+
+.main-view .complete-task-list .list-cell {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 8;
+    -fx-alignment: center-left;
+    -fx-text-fill: black;
+    -fx-padding: 5;
+}
+
+.main-view .complete-task-list .list-cell:hover {
+    -fx-background-color: #c0c0c0;
+    -fx-cursor: hand;
+}
+
+.main-view .complete-task-list .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
 
 .main-view .task-btn {
     -fx-padding: 5 10 5 10;
@@ -35,4 +75,14 @@
 .main-view .text-field:focused {
     -fx-background-color: white;
     -fx-text-fill: black;
+}
+
+#current-task-text {
+    -fx-font-size: 1.5em;
+    -fx-fill: linear-gradient(to right, dodgerblue, blue);
+}
+
+#complete-task-text {
+    -fx-font-size: 1.5em;
+    -fx-fill: linear-gradient(to right, limegreen, darkgreen);
 }
