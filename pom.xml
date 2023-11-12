@@ -6,8 +6,9 @@
 
     <groupId>projects</groupId>
     <artifactId>ToDo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>ToDo</name>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,6 +51,13 @@
                     <source>20</source>
                     <target>20</target>
                 </configuration>
+            </plugin>
+            <!--            Plugin to update it to latest because it was giving me error that the default version was
+            using deprecated dependency-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
             </plugin>
             <plugin>
                 <groupId>org.openjfx</groupId>
