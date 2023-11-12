@@ -3,19 +3,24 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="main-view" stylesheets="@main-view.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projects.todo.MainController">
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="600.0" prefWidth="600.0" styleClass="main-view" stylesheets="@main-view.css"
+      xmlns="http://javafx.com/javafx/21" fx:controller="projects.todo.MainController">
     <AnchorPane>
-        <Text id="current-task-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Task" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="0.0" />
-        <Text id="complete-task-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Completed Task" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="0.0" />
-        <ListView fx:id="currentTaskLV" layoutX="11.2" prefHeight="450.0" prefWidth="280.0" styleClass="current-task-List" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="30.0" />
-        <ListView fx:id="completeTaskLV" prefHeight="450.0" prefWidth="280.0" styleClass="complete-task-list" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0" />
+        <Text id="current-task-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Task"
+              AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="0.0"/>
+        <Text id="complete-task-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Completed Task"
+              AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="0.0"/>
+        <ListView fx:id="currentTaskLV" layoutX="11.2" prefHeight="450.0" prefWidth="280.0"
+                  styleClass="current-task-List" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0"
+                  AnchorPane.topAnchor="30.0"/>
+        <ListView fx:id="completeTaskLV" prefHeight="450.0" prefWidth="280.0" styleClass="complete-task-list"
+                  AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0"/>
     </AnchorPane>
     <VBox id="vbox">
-        <TextField fx:id="newTaskTF" text="New Task" />
-        <Button fx:id="addTaskBtn" mnemonicParsing="false" styleClass="task-btn" text="Add Task" />
+        <TextField fx:id="newTaskTF" text="New Task"/>
+        <Button fx:id="addTaskBtn" mnemonicParsing="false" styleClass="task-btn" text="Add Task"/>
     </VBox>
 </VBox>
