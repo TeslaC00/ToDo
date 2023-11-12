@@ -12,7 +12,7 @@
 }
 
 .main-view .current-task-List {
-    -fx-background-color: yellow;
+    -fx-background-color: lightblue;
     -fx-padding: 5;
     -fx-text-fill: white;
 }
@@ -61,7 +61,7 @@
 .main-view .task-btn {
     -fx-padding: 5 10 5 10;
     -fx-border-radius: 8;
-    -fx-background-color: aqua;
+    -fx-background-color: #D1D1D9;
 }
 
 .main-view .task-btn:hover {

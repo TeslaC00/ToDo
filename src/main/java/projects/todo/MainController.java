@@ -49,4 +49,32 @@ public class MainController implements Initializable {
         alert.showAndWait();
     }
 
+
+
+
 }
+    // needs to be implemented
+    //
+    /*public void changeButtonColor() {
+        if (colorTF == null) {
+            // handle the null text field case
+            return;
+        }
+
+        String color = colorTF.getText();
+
+        if (color == null || color.isEmpty()) {
+            showWarnAlert("Empty Color Warning", "You have not entered any color.\nPlease enter a hex color.");
+            return;
+        }
+
+        if (!color.matches("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$")) {
+            showWarnAlert("Invalid Color", "Please enter a valid hex color. (ex: #FFFFFF)");
+            return;
+        }
+
+        Platform.runLater(() -> colorButton.setStyle("-fx-background-color: " + color + ";"));
+    }
+
+
+     */
